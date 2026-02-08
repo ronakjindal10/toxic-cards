@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: toxic-cards
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NEXT_PUBLIC_SUPABASE_URL
+        value: https://zlfswxejroivmlzqgbwl.supabase.co
+      - key: NEXT_PUBLIC_SUPABASE_ANON_KEY
+        value: sb_publishable_4KL3XVAsKW8eofBOikTZLw_Uo-KmsAM
+      - key: NODE_VERSION
+        value: 20.0.0
