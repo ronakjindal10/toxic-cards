@@ -44,7 +44,7 @@ export const AddCardModal: React.FC<Props> = ({ isOpen, onClose, onAdd }) => {
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="space-y-2">
-            <label className="block text-sm font-[family-name:var(--font-heading)] uppercase tracking-wide">Friend's Name</label>
+            <label className="block text-sm font-[family-name:var(--font-heading)] uppercase tracking-wide">Friend&apos;s Name</label>
             <input 
               required 
               value={name} 

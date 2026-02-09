@@ -18,7 +18,7 @@ export const ToxicCard: React.FC<Props> = ({ card, onUpdateStat }) => {
       {/* Holographic Header */}
       <div className="holographic-bg p-1 border-4 border-black shrink-0">
         <div className="bg-white/10 px-2 py-1 flex justify-between items-center backdrop-blur-[2px]">
-          <span className="font-[family-name:var(--font-heading)] uppercase text-2xl text-black drop-shadow-[2px_2px_0px_rgba(255,255,255,0.8)] tracking-tight truncate flex-1">{card.name}</span>
+          <span className="font-[family-name:var(--font-heading)] uppercase text-2xl text-black drop-shadow-[2px_2px_0px_rgba(255,255,255,0.8)] tracking-tight truncate flex-1 leading-none">{card.name}</span>
           <span className="bg-red-600 text-white px-2 py-0.5 text-[10px] font-black border-2 border-black rotate-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">HP 999</span>
         </div>
       </div>
@@ -48,7 +48,7 @@ export const ToxicCard: React.FC<Props> = ({ card, onUpdateStat }) => {
                 <span className="w-6 text-center text-sm">{value}</span>
                 <button 
                   onClick={() => onUpdateStat(card.id, stat, 1)} 
-                  className=\"bg-green-500 text-white w-6 h-6 flex items-center justify-center border-2 border-black arcade-btn font-black text-sm"
+                  className="bg-green-500 text-white w-6 h-6 flex items-center justify-center border-2 border-black arcade-btn font-black text-sm"
                 >+</button>
               </div>
             </div>
@@ -63,7 +63,7 @@ export const ToxicCard: React.FC<Props> = ({ card, onUpdateStat }) => {
       </div>
 
       {/* Rarity Badge */}
-      <div className=\"absolute -bottom-2 -right-2 rotate-[-5deg] z-10">
+      <div className="absolute -bottom-2 -right-2 rotate-[-5deg] z-10">
         <div className="bg-black text-yellow-400 px-3 py-1 text-xs font-[family-name:var(--font-heading)] uppercase border-2 border-white shadow-[4px_4px_0px_0px_rgba(255,0,255,1)] tracking-widest">
           {card.rarity}
         </div>
